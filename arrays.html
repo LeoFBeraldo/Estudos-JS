@@ -1,0 +1,42 @@
+<html>
+    <script>
+        //Criando lista
+        var carros = ["Gol", "Palio", "Uno", "Versa",];
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+        var quartoCarro = carros[3];
+
+        //Imprimindo lista
+        console.log("Primerira posição " + primeiroCarro);
+        console.log("Segunda posição " + segundoCarro);
+        console.log("Terceira posição " + terceiroCarro);
+        console.log("Quarta posição " + quartoCarro);
+
+        //Trocando valor da variavel
+        carros[2] = "Argo";
+        console.log(carros[2]);
+
+        //imprimindo informações da lista
+        console.log("Quantidade de itens na lista é " + carros.length);
+        console.log("O último elemento do array: "+ carros[carros.length - 1]);
+
+        //adicionando elementos no array
+        carros[carros.length] = "Virtus";
+        console.log("O último elemento do array: "+ carros[carros.length - 1]);
+
+        carros.push("Polo");
+        console.log(carros);
+
+        console.log(carros.pop());
+        console.log(carros);
+
+        carros.unshift("Jetta");
+        console.log(carros);
+
+        console.log(carros.shift())
+        console.log(carros);
+    </script>
+</html>

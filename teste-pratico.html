@@ -1,0 +1,28 @@
+<html>
+<script>
+    //Enunciado : O aluno deverá criar um programa para informar se determinado número é primo ou não.
+    //1 - pegar o numero escolhido para saber se é primo
+    //2 - 1 não é primo
+    //3 - testar se ele é divisivel por algum numero > que 1 e < que ele mesmo
+    //4 - caso for, ele não é primo
+    //5 - se nao for, ele é primo
+
+    //1    
+    function verificaNumeroPrimo(numero) {
+        //2
+        if (numero === 1) {
+            return ("O número " + numero + " não é primo");
+        }
+        //3
+        for (i = 2; i < numero; i++) {
+            //4
+            if (numero % i === 0 || numero === 1) {
+                return ("O número " + numero + " não é primo");
+            }
+        }
+        //5
+        return ("O número " + numero + " é primo");
+    }
+</script>
+
+</html>
